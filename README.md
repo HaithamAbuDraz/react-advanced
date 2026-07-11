@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -73,3 +74,7 @@ export default defineConfig([
 ])
 
 ```
+=======
+# react-advanced
+A comprehensive React Advanced learning repository covering TypeScript, Redux Toolkit, React Query, authentication, performance optimization, Next.js, and production-ready React patterns.
+>>>>>>> c7df1213831787f2b174349fa24e3a9f74619dd6
