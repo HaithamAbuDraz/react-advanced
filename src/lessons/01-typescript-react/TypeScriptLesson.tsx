@@ -1,11 +1,12 @@
-import LoginForm from './components/LoginForm';
+import Button from './components/Button';
 
 function TypeScriptLesson() {
   return (
     <div>
       <h1>TypeScript with React</h1>
-      <h2>Login Form</h2>
-      <LoginForm />
+      <h2>Button (with optional color)</h2>
+      <Button text='Default Blue' />
+      <Button text='Red Button' color='red' />
     </div>
   );
 }
