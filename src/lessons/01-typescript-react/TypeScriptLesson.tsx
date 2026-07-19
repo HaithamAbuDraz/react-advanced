@@ -1,24 +1,12 @@
-import ProductList from './components/ProductList';
+import Counter from './components/Counter';
 
 function TypeScriptLesson() {
-  const products = [
-    {
-      id: 1,
-      title: 'Laptop',
-      price: 1200,
-    },
-    {
-      id: 2,
-      title: 'Mouse',
-      price: 40,
-    },
-  ];
 
   return (
     <div>
       <h1>TypeScript with React</h1>
-
-      <ProductList products={products} />
+      <h2>Counter</h2>
+      <Counter />
     </div>
   );
 }
