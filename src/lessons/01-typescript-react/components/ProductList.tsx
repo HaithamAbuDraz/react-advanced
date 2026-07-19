@@ -1,4 +1,5 @@
-import type { Product } from "../types/Product";
+import type { Product } from '../types/Product';
+import { formatPrice } from '../utils/formatPrice';
 
 interface Props {
   products: Product[];
@@ -10,8 +11,7 @@ function ProductList({ products }: Props) {
       {products.map((product) => (
         <div key={product.id}>
           <h3>{product.title}</h3>
-
-          <p>${product.price}</p>
+          <p>{formatPrice(product.price)}</p>
         </div>
       ))}
     </div>
