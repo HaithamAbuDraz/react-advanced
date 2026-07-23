@@ -1,7 +1,7 @@
-import RegistrationForm from './components/RegistrationForm';
+import TodoList from "./components/TodoList";
 
 function TypeScriptChallenge() {
-  return <RegistrationForm />;
+  return <TodoList />;
 }
 
 export default TypeScriptChallenge;
