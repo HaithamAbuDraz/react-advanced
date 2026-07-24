@@ -1,7 +1,7 @@
-import TypeScriptChallenge from "./challenges/01-typescript-react/TypeScriptChallenge";
+import UseRefLesson from "./lessons/02-useRef/UseRefLesson";
 
 function App() {
-  return <TypeScriptChallenge />;
+  return <UseRefLesson />;
 }
 
 export default App;
