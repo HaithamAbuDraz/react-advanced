@@ -1,10 +1,10 @@
-import Stopwatch from './components/Stopwatch';
+import UncontrolledForm from './components/UncontrolledForm';
 
 function UseRefLesson() {
   return (
     <div>
       <h1>useRef Hook – Lesson</h1>
-      <Stopwatch />
+      <UncontrolledForm />
     </div>
   );
 }
