@@ -1,10 +1,10 @@
-import AutoFocusInput from './components/AutoFocusInput';
+import Stopwatch from './components/Stopwatch';
 
 function UseRefLesson() {
   return (
     <div>
       <h1>useRef Hook – Lesson</h1>
-      <AutoFocusInput />
+      <Stopwatch />
     </div>
   );
 }
