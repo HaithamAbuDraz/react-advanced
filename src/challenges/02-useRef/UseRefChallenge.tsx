@@ -1,7 +1,7 @@
-import StopwatchWithLaps from "./components/StopwatchWithLaps";
+import NotesApp from "./components/NotesApp";
 
 function UseRefChallenge() {
-  return <StopwatchWithLaps />;
+  return <NotesApp />;
 }
 
 export default UseRefChallenge;
