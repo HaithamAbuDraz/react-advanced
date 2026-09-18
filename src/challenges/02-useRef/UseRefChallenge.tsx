@@ -1,7 +1,7 @@
-import NotesApp from "./components/NotesApp";
+import VideoPlayer from "./components/VideoPlayer";
 
 function UseRefChallenge() {
-  return <NotesApp />;
+  return <VideoPlayer />;
 }
 
 export default UseRefChallenge;
