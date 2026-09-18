@@ -1,7 +1,7 @@
-import UseRefLesson from "./lessons/02-useRef/UseRefLesson";
+import UseRefChallenge from "./challenges/02-useRef/UseRefChallenge";
 
 function App() {
-  return <UseRefLesson />;
+  return <UseRefChallenge />;
 }
 
 export default App;
