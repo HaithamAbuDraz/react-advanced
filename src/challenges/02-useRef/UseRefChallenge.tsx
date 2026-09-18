@@ -1,7 +1,7 @@
-import CharacterCounter from "./components/CharacterCounter";
+import StopwatchWithLaps from "./components/StopwatchWithLaps";
 
 function UseRefChallenge() {
-  return <CharacterCounter />;
+  return <StopwatchWithLaps />;
 }
 
 export default UseRefChallenge;
