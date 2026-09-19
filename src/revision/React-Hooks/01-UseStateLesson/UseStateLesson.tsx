@@ -1,85 +1,67 @@
 import { useState } from 'react';
 
-export default function Counter() {
-  const [count, setCount] = useState(0);
+export default function MyInput() {
+  const [text, setText] = useState('hello');
+  const [liked, setLiked] = useState(false);
+  const [name, setName] = useState('Haitham');
+  const [age, setAge] = useState(22);
 
-  function decrementCount() {
-    setCount(prevCount => prevCount - 1);
+  function handleChangeText(e: React.ChangeEvent<HTMLInputElement>) {
+    setText(e.target.value);
   }
 
-  function decrementCountByTwo() {
-    setCount(prevCount => prevCount - 2);
+  function handleChangeLiked(e: React.ChangeEvent<HTMLInputElement>) {
+    setLiked(e.target.checked);
   }
 
-  function incrementCount() {
-    setCount(prevCount => prevCount + 1);
+  function incrementAge() {
+    setAge(prevAge => prevAge + 1);
   }
 
-  function incrementCountByTwo() {
-    setCount(prevCount => prevCount + 2);
+  function decrementAge() {
+    setAge(prevAge => prevAge - 1);
   }
 
-  function resetCount() {
-    if (count === 0) return alert("Count is already 0");
-    setCount(0);
+  function handleSetAge() {
+    const input = prompt('Enter your age');
+    if (input === null || input === '') return;
+
+    const parsed = Number(input);
+    if (!Number.isFinite(parsed)) {
+      alert('Please enter a valid number');
+      return;
+    }
+
+    setAge(parsed);
   }
-
-  function setUserCount() {
-  const newCount = prompt("Enter new count");
-
-  if (newCount === null) {
-    alert("You cancelled the operation");
-    return;
-  }
-
-  if (newCount === "") {
-    alert("You entered an empty count");
-    return;
-  }
-
-  const parsedCount = Number(newCount);
-
-  if (Number.isNaN(parsedCount)) {
-    alert("You entered an invalid number");
-    return;
-  }
-
-  if (parsedCount === count) {
-    alert("You entered the same count");
-    return;
-  }
-
-  setCount(parsedCount);
-}
 
   return (
-    <div>
-      <h1>Counter</h1>
-      <p>Count: {count}</p>
+    <>
+      <input value={text} onChange={handleChangeText} />
+      <p>Your current value is: {text}</p>
 
-      <button onClick={decrementCount}>
-        -1
-      </button>
+      <hr />
 
-      <button onClick={decrementCountByTwo}>
-        -2
-      </button>
+      <label>
+        <input
+          type="checkbox"
+          checked={liked}
+          onChange={handleChangeLiked}
+        />
+        I liked this
+      </label>
+      <p>You {liked ? 'liked' : 'did not like'} this.</p>
 
-      <button onClick={incrementCount}>
-        +1
-      </button>
+      <hr />
 
-      <button onClick={incrementCountByTwo}>
-        +2
-      </button>
-
-      <button onClick={resetCount}>
-        Reset
-      </button>
-
-      <button onClick={setUserCount}>
-        Set Count
-      </button>
-    </div>
+      <input
+        value={name}
+        onChange={e => setName(e.target.value)}
+      />
+      <button onClick={incrementAge}>Increment age</button>
+      <button onClick={decrementAge}>Decrement age</button>
+      <button onClick={handleSetAge}>Set age</button>
+      <p>Hello, {name}. You are {age}.</p>
+    </>
   );
 }
