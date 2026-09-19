@@ -1,7 +1,7 @@
-import UseRefChallenge from "./challenges/02-useRef/UseRefChallenge";
+import UseLayoutEffectLesson from "./lessons/03-useLayoutEffect/UseLayoutEffectLesson";
 
 function App() {
-  return <UseRefChallenge />;
+  return <UseLayoutEffectLesson />;
 }
 
 export default App;
