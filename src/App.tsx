@@ -1,7 +1,7 @@
-import UseLayoutEffectLesson from "./lessons/03-useLayoutEffect/UseLayoutEffectLesson";
+import UseStateLesson from "./revision/React-Hooks/01-UseStateLesson/UseStateLesson";
 
 function App() {
-  return <UseLayoutEffectLesson />;
+  return <UseStateLesson />;
 }
 
 export default App;
