@@ -1,7 +1,7 @@
-import UseStateLesson from "./revision/React-Hooks/01-UseStateLesson/UseStateLesson";
+import UseReducerLesson from "./revision/React-Hooks/02-UseReducerLesson/UseReducerLesson";
 
 function App() {
-  return <UseStateLesson />;
+  return <UseReducerLesson />;
 }
 
 export default App;
