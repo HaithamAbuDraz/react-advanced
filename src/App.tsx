@@ -1,7 +1,7 @@
-import UseReducerLesson from "./revision/React-Hooks/02-UseReducerLesson/UseReducerLesson";
+import TaskApp from "./revision/React-Hooks/02-UseReducerLesson/TaskApp";
 
 function App() {
-  return <UseReducerLesson />;
+  return <TaskApp />;
 }
 
 export default App;
