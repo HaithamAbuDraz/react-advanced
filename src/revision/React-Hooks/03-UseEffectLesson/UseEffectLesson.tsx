@@ -1,5 +1,5 @@
-import CleanupExample from './examples/CleanupExample';
+import FetchExample from './examples/FetchExample';
 
 export default function UseEffectLesson() {
-  return <CleanupExample />;
+  return <FetchExample />;
 }
