@@ -1,5 +1,5 @@
-import EmptyDepsExample from './examples/EmptyDepsExample';
+import WithDepsExample from './examples/WithDepsExample';
 
 export default function UseEffectLesson() {
-  return <EmptyDepsExample />;
+  return <WithDepsExample />;
 }
