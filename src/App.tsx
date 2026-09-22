@@ -1,7 +1,7 @@
-import UseEffectLesson from './revision/React-Hooks/03-UseEffectLesson/UseEffectLesson';
+import UseContextLesson from './revision/React-Hooks/04-UseContextLesson/UseContextLesson';
 
 function App() {
-  return <UseEffectLesson />;
+  return <UseContextLesson />;
 }
 
 export default App;
