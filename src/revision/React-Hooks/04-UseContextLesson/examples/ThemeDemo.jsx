@@ -1,4 +1,4 @@
-import ThemeProvider from '../provider/ThemeProvider';
+import ThemeProvider from '../Provider/ThemeProvider';
 import useTheme from '../context/useTheme';
 
 /* ---------- Deeply-nested consumer (no props passed) ---------- */
